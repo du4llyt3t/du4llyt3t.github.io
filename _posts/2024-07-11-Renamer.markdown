@@ -1,0 +1,36 @@
+---
+title: "Renamer.sh tool"
+layout: post
+date: 2024-07-11 14:42
+tag: tools
+headerImage: true
+image: /assets/images/bashCode.jpeg
+projects: true
+description: "This is a simple script that changes the names of the pasted images. "
+category: project
+author: du4llyt3t
+hidden: false
+externalLink: false
+---
+
+The idea for this tool arises from the need to efficiently organize the numerous screenshots taken during certification development or when working on machines in HTB. Managing these screenshots can be tedious when it comes to writing a report or taking notes. (Something similar can be seen in the following image).
+
+![image](/assets/images/renamerImages/0.png)
+
+During the development of the report for my *eCCPTv2* certification exam, I noticed that it was easier to organize the images numerically according to the capture order, and it was also simpler to reference their names in tools like LaTeX.
+
+Due to this, I developed a brief bash script that takes all the files in a folder with names like "Pasted Image 20240706xxxxxx.png" and organizes them by assigning an order according to the capture sequence. The command used is shown below.
+
+```bash
+./renamer.sh -d /home/du4llyt3t/Desktop/MinionImages -e png
+```
+
+![image](/assets/images/renamerImages/3.png)
+
+*Note: I suggest creating a copy of the images before running the script to prevent potential data loss.*
+
+Finally, it can be seen that the first captured image is labeled 0.png, while the last one is labeled 71.png.
+
+![image](/assets/images/renamerImages/4.png)
+
+You can find the tool on my github page or at the following link [renamer tool](https://github.com/du4llyt3t/renamer)
