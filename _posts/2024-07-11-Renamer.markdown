@@ -1,5 +1,5 @@
 ---
-title: "Renamer.sh tool"
+title: "Renamer tool"
 layout: post
 date: 2024-07-11 14:42
 tag: tools
